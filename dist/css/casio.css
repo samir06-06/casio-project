@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif; }
+
+@font-face {
+  font-family: 'YourFontFamily';
+  src: url("/fonts/*.ttf") format("truetype"); }
+
+body {
+  background-color: #fff; }
+
+button {
+  margin-top: 10px;
+  padding: 16px 50px 16px 50px;
+  font-size: 13px;
+  border: none;
+  color: #fff;
+  background-color: #000; }
+  button a {
+    color: #fff; }
+
+a {
+  cursor: pointer;
+  text-decoration: none; }
+
+img {
+  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%; }
+
+section {
+  margin: 100px 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 15px 0; }
+
+#container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+header {
+  padding: 20px 0;
+  text-align: center;
+  width: 100%; }
+
+.casio {
+  margin: 10px 0;
+  padding: 10 0px;
+  width: 150px;
+  align-items: center; }
+
+#loop {
+  padding-left: 5px;
+  line-height: 40px;
+  width: 200px;
+  border: none;
+  margin: 0 0 0 15px;
+  border-bottom: 1px solid grey; }
+
+#loop-search {
+  margin: 10px 0;
+  z-index: 2; }
+
+.loop-search {
+  padding-left: 5px;
+  line-height: 50px;
+  width: 350px;
+  border: none;
+  margin: 1px 0 10px 0;
+  border-bottom: 1px solid grey; }
+
+#mine i {
+  color: #000;
+  margin: 0 15px; }
+
+#casio {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: baseline; }
+
+#ext {
+  padding: 30px 0;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row; }
+  #ext a {
+    font-size: 20px;
+    color: #000;
+    font-weight: 400; }
+
+#all-products {
+  font-size: 17px;
+  color: #000;
+  font-weight: 400; }
+
+#off {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px; }
+  #off #off-text {
+    padding: 20px 0;
+    flex: 1; }
+    #off #off-text h1 {
+      font-size: 80px;
+      font-weight: 100; }
+    #off #off-text p {
+      font-size: 21px; }
+  #off-img {
+    min-width: 40%;
+    flex: 2;
+    background: url("/img/G-SHOCK-full-metal-GM-B2100_(1).jpg") no-repeat center center/cover; }
+
+#learn-m-products {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly; }
+
+.l-m-product-img {
+  cursor: pointer;
+  border: 1px solid #e5e5e5;
+  width: 284px;
+  height: 234px; }
+  .l-m-product-img:hover {
+    border: 1px solid #000; }
+
+.s-m-product-img {
+  cursor: pointer;
+  border: 1px solid #e5e5e5;
+  width: 284px;
+  height: 234px; }
+  .s-m-product-img:hover {
+    border: 1px solid #000; }
+
+#p-info {
+  display: flex;
+  flex-direction: row; }
+  #p-info span {
+    flex: 2;
+    font-size: 20px; }
+  #p-info p {
+    flex: 5;
+    margin: 0 90px 0 0; }
+
+#rated-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  #rated-products .r-p {
+    text-align: center; }
+    #rated-products .r-p .r-p-img {
+      padding: 12px 0 0 0;
+      height: 313px;
+      width: 234px;
+      border: 1px solid #e5e5e5; }
+      #rated-products .r-p .r-p-img:hover {
+        border: 1px solid #000; }
+      #rated-products .r-p .r-p-img i {
+        color: grey;
+        cursor: pointer;
+        position: relative;
+        right: -85px;
+        top: -300px; }
+        #rated-products .r-p .r-p-img i:hover {
+          color: black; }
+
+#star-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  #star-products .star-p {
+    text-align: center; }
+    #star-products .star-p .star-p-img {
+      padding: 12px 0 0 0;
+      height: 313px;
+      width: 234px;
+      border: 1px solid #e5e5e5; }
+      #star-products .star-p .star-p-img:hover {
+        border: 1px solid #000; }
+      #star-products .star-p .star-p-img i {
+        color: grey;
+        cursor: pointer;
+        position: relative;
+        right: -80px;
+        top: -230px; }
+        #star-products .star-p .star-p-img i:hover {
+          color: black; }
+
+#back-in-stock {
+  display: flex;
+  height: 734px;
+  flex-direction: row;
+  margin-bottom: 50px; }
+  #back-in-stock #b-i-s-img {
+    width: 488px;
+    border: 1px solid #000;
+    margin-right: 100px;
+    background: url("/img/G-SHOCK US Official Website _ CASIO.jpeg") no-repeat center center/cover; }
+  #back-in-stock #b-i-s-text {
+    margin-top: 400px;
+    width: 488px; }
+
+#cust-rating {
+  margin: 70px 0;
+  text-align: center; }
+  #cust-rating #cust-head {
+    margin: 0 0 50px 0; }
+    #cust-rating #cust-head i {
+      margin: 0 0 10px 0; }
+  #cust-rating #customers {
+    display: flex;
+    flex-direction: row; }
+    #cust-rating #customers #customer {
+      margin: 10px; }
+      #cust-rating #customers #customer p {
+        font-size: 20px;
+        margin: 20px 0; }
+      #cust-rating #customers #customer span {
+        color: #373737; }
+      #cust-rating #customers #customer p {
+        font-size: 20px; }
+
+#about {
+  padding: 0 0 30px 0;
+  background-color: #e5e5e5; }
+  #about #container {
+    display: flex;
+    flex-direction: row; }
+    #about #container #about-faq {
+      flex: 2;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row; }
+      #about #container #about-faq-list h5 {
+        font-size: 20px;
+        margin: 30px 0; }
+      #about #container #about-faq-list p {
+        margin: 18px 0; }
+    #about #container #sign-up {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 0 200px 0 100px; }
+      #about #container #sign-up h5 {
+        font-size: 20px;
+        margin: 30px 0; }
+      #about #container #sign-up div {
+        margin: 15px 0;
+        display: flex;
+        flex-direction: row; }
+      #about #container #sign-up input {
+        border: none;
+        width: 252px;
+        line-height: 35px;
+        padding: 2px 6px 2px 6px; }
+      #about #container #sign-up button {
+        margin: 0; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0 80px 0; }
+  footer div {
+    flex: 1;
+    width: 160px; }
+  footer .casio {
+    margin: 20px 0; }
+  footer #p {
+    flex: 1;
+    text-align: center;
+    margin: auto; }
+
+#search-items {
+  display: grid;
+  gap: 40px 0;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  justify-content: space-evenly; }
+
+#item-information {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3fr 2fr; }
+  #item-information #item-display {
+    display: flex;
+    justify-content: center; }
+  #item-information .item-about {
+    border: #f0f0f0 1px solid;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px; }
+    #item-information .item-about span {
+      margin: auto;
+      font-size: 25px; }
+    #item-information .item-about p {
+      font-size: 15px; }
+    #item-information .item-about .buy-favorite {
+      font-size: 15px;
+      color: #000;
+      background: #fff;
+      border: white 2px solid; }
+      #item-information .item-about .buy-favorite:hover {
+        border: gainsboro 2px solid; }

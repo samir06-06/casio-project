@@ -1,0 +1,426 @@
+@import '_utilities';
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Lato', sans-serif;
+}
+
+@font-face {
+  font-family: 'YourFontFamily';
+  src: url('/fonts/*.ttf') format('truetype');
+ }
+
+body{
+  background-color: $bright;
+}
+
+button{
+  margin-top: 10px;
+  padding: 16px 50px 16px 50px;
+  font-size: $small-font;
+  border: none;
+  color: $bright;
+  background-color: $dark;
+  a{
+    color: $bright;
+  }
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+img{
+  cursor: pointer;
+ max-width: 100%;
+ max-height: 100%;
+
+}
+
+section{
+  margin:100px 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin:15px 0; 
+}
+
+
+
+#container {
+  max-width: 1300px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+}
+
+header{
+  padding: 20px 0;
+  text-align: center;
+  // height: 170px;
+  width: 100%;
+}
+
+.casio{
+  margin: 10px 0;
+  padding: 10 0px;
+  width: 150px;
+  // height: 30px;
+align-items: center
+}
+
+#loop{
+  padding-left: 5px;
+  line-height: 40px;
+  width: 200px;
+  border: none;
+  margin:0 0 0 15px;
+  border-bottom: 1px solid grey;
+}
+
+#loop-search{
+  margin: 10px 0;
+  z-index: 2;
+}
+
+.loop-search{
+  padding-left: 5px;
+  line-height: 50px;
+  width: 350px;
+  border: none;
+  margin:1px 0 10px 0;
+  border-bottom: 1px solid grey;
+
+}
+#mine{
+  i{
+    color: $dark;
+    margin: 0 15px;
+  }
+}
+
+
+#casio{
+  // height: 85px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: baseline;
+
+ 
+}
+
+#ext{
+  padding: 30px 0;
+  border-top: 1px solid $light-grey;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+  a{
+    font-size: $avarage-font;
+    color: $dark;
+    font-weight: 400;
+  }
+}
+
+#all-products{
+  font-size: 17px;
+    color: $dark;
+    font-weight: 400;
+}
+
+
+
+#off{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  // height: 423px;
+  margin-bottom: 30px;
+  #off-text{
+    padding:20px 0;
+    flex:1;
+    h1{
+      font-size: 80px;
+      font-weight: 100;
+    }
+    p{
+      font-size: $big-font;
+    }
+  }
+  &-img{
+    min-width: 40%;
+    flex:2;
+      background: url('/img/G-SHOCK-full-metal-GM-B2100_\(1\).jpg') no-repeat center center/cover;
+  }
+}
+
+#learn-m-products{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+
+}
+.l-m-product{
+  &-img{
+    cursor: pointer;
+    border: 1px solid $light-grey;
+    width: 284px;
+    height: 234px;
+    &:hover{
+      border: 1px solid $dark;
+    }
+  }
+}
+
+.s-m-product {
+  &-img{
+    cursor: pointer;
+    border: 1px solid $light-grey;
+    width: 284px;
+    height: 234px;
+    &:hover{
+      border: 1px solid $dark;
+    }
+  }
+    
+}
+
+#p-info{
+  display: flex;
+  flex-direction: row;
+  // height: 150px;
+  span{
+    flex: 2;
+    font-size: $avarage-font;
+  }
+  p{
+    flex:5;
+    margin: 0 90px 0 0;
+  }
+}
+
+#rated-products{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  .r-p{
+    text-align: center;
+    .r-p-img{
+      padding: 12px 0 0 0;
+      height: 313px;
+      width: 234px;
+      border: 1px solid $light-grey;
+      &:hover{
+        border: 1px solid $dark;
+      }
+      i{
+        color: grey;
+        cursor: pointer;
+        position: relative;
+        right: -85px;
+        top: -300px;
+
+        &:hover{
+          color: black;
+        }
+      }
+      
+    }
+  }
+}
+
+
+#star-products{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  .star-p{
+    text-align: center;
+    .star-p-img{
+      padding: 12px 0 0 0;
+      height: 313px;
+      width: 234px;
+      border: 1px solid $light-grey;
+      &:hover{
+        border: 1px solid $dark;
+      }
+      i{
+        color: grey;
+        cursor: pointer;
+        position: relative;
+        right: -80px;
+        top: -230px;
+
+        &:hover{
+          color: black;
+        }
+      }
+      
+    }
+  }
+}
+
+
+#back-in-stock{
+  display: flex;
+  height: 734px;
+  flex-direction: row;
+  #b-i-s-img{
+    width: 488px;
+    border: 1px solid $dark;
+    margin-right:100px;
+    background: url("/img/G-SHOCK\ US\ Official\ Website\ _\ CASIO.jpeg") no-repeat center center/cover;
+  }
+  #b-i-s-text{
+    margin-top:400px;
+    width: 488px;
+  }
+  margin-bottom: 50px;
+}
+
+
+#cust-rating{
+  margin: 70px 0;
+  text-align: center;
+  #cust-head{
+    margin: 0 0 50px 0;
+    i{
+      margin:0 0 10px 0;
+    }
+  }
+  #customers{
+    display: flex;
+    flex-direction: row;
+    #customer{
+      margin:10px;
+      p{
+        font-size: $avarage-font;
+        margin:20px 0;
+      }
+      span{
+        color:$date-color
+      }
+      p{
+        font-size: $avarage-font;
+      }
+    }
+  }
+}
+
+#about{
+  padding: 0 0 30px 0;
+  background-color:$light-grey;
+  #container{
+    display: flex;
+    flex-direction: row;
+    #about-faq{
+      flex:2;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      &-list{
+        h5{
+          font-size:$avarage-font;
+          margin: 30px 0;
+        }
+        p{
+          margin: 18px 0;
+        }
+      }
+    }
+    #sign-up{
+      flex:1;
+      display: flex;
+      flex-direction: column;
+      padding: 0 200px 0 100px;
+      h5{
+          font-size:$avarage-font;
+          margin: 30px 0;
+        }
+        div{
+          margin: 15px 0;
+          display: flex;
+          flex-direction: row;
+        }
+        input{
+          border: none;
+          width:252px;
+          line-height: 35px;
+          padding: 2px 6px 2px 6px;
+        }
+        button{
+          margin:0;
+
+        }
+    }
+  }
+  
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0 80px 0;
+  div{
+    flex:1;
+    width: 160px;
+  }
+  .casio{
+    margin: 20px 0;
+  }
+
+  #p{
+    flex:1;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+#search-items{
+  display: grid;
+  gap: 40px 0;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+
+#item-information{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3fr 2fr;
+  #item-display{
+    display: flex;
+    justify-content: center;
+  }
+  .item-about{
+    border: rgb(240, 240, 240) 1px solid;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    span{
+      margin: auto;
+      font-size: 25px;
+    }
+ 
+    p{
+      font-size: 15px;
+    }
+    .buy-favorite{
+      font-size: 15px;
+      color: $dark;
+      background: $bright;
+      border: rgb(255, 255, 255) 2px solid;
+      &:hover{
+        border: rgb(220, 220, 220) 2px solid;
+      }
+      
+    }
+  }
+}

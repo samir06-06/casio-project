@@ -1,0 +1,144 @@
+{
+  "watches": [
+    {
+      "id": 1,
+      "watchName": "Casio Pro Trek PRG-600Y-1CR",
+      "watchPrice": 79.99,
+      "watchImg": "/img/casioavif.jpg",
+      "lorem": "This watch features a rugged construction with a stainless steel case and water-resistant design, making it ideal for outdoor enthusiasts."
+    },
+    {
+      "id": 2,
+      "watchName": "Casio Wave Ceptor WVA-M630B-1AJF",
+      "watchPrice": 199.99,
+      "watchImg": "/img/casioavif(2).jpg",
+      "lorem": "The Casio Wave Ceptor watch boasts advanced timekeeping accuracy with multi-band atomic timekeeping and solar-powered functionality."
+    },
+    {
+      "id": 3,
+      "watchName": "Casio Baby-G BGA-240L-1A",
+      "watchPrice": 119.99,
+      "watchImg": "/img/casioavif(3).jpg",
+      "lorem": "The Casio Baby-G is a stylish and durable women's watch with shock resistance, LED backlight, and a 100-meter water-resistant feature."
+    },
+    {
+      "id": 4,
+      "watchName": "Casio Classic Collection AE1200WH-1A",
+      "watchPrice": 99.99,
+      "watchImg": "/img/casioavif(4).jpg",
+      "lorem": "A timeless classic, the Casio Classic Collection watch is known for its world time feature, durable resin band, and LED backlight."
+    },
+    {
+      "id": 5,
+      "watchName": "Casio Vintage A168WG-9",
+      "watchPrice": 129.99,
+      "watchImg": "/img/casioavif(5).jpg",
+      "lorem": "The Casio Vintage A168WG-9 offers a blend of retro style and modern functionality with a gold-tone stainless steel bracelet and LED backlight."
+    },
+    {
+      "id": 6,
+      "watchName": "Casio Retro LA680WGA-1B",
+      "watchPrice": 99.99,
+      "watchImg": "/img/image(1).jpg",
+      "lorem": "This retro-inspired watch combines a digital and analog display, daily alarms, and a stopwatch function in a fashionable gold-tone design."
+    },
+    {
+      "id": 7,
+      "watchName": "Casio Pathfinder PAG240-1",
+      "watchPrice": 199.99,
+      "watchImg": "/img/image(2).jpg",
+      "lorem": "The Casio Pathfinder PAG240-1 is a rugged outdoor watch with features like a triple sensor, digital compass, and solar power."
+    },
+    {
+      "id": 8,
+      "watchName": "Casio Wave Ceptor WV58A-1AV",
+      "watchPrice": 99.99,
+      "watchImg": "/img/image(6).jpg",
+      "lorem": "The Casio Wave Ceptor WV58A-1AV is a sleek watch with atomic timekeeping, world time, and an LED light for visibility in the dark."
+    },
+    {
+      "id": 9,
+      "watchName": "Casio Pro Trek PRW2500-1",
+      "watchPrice": 189.99,
+      "watchImg": "/img/image(5).jpg",
+      "lorem": "Built for outdoor adventures, the Casio Pro Trek PRW2500-1 offers solar power, triple sensor technology, and a digital compass."
+    },
+    {
+      "id": 10,
+      "watchName": "Casio G-Shock Mudman GW9300-1",
+      "watchPrice": 149.99,
+      "watchImg": "/img/image(3).jpg",
+      "lorem": "Designed for extreme conditions, the Casio G-Shock Mudman GW9300-1 is mud and shock-resistant, with a digital compass and moon phase graph."
+    },
+    {
+      "id": 11,
+      "watchName": "Casio Edifice EF503D-1AV",
+      "watchPrice": 179.99,
+      "watchImg": "/img/image(4).jpg",
+      "lorem": "The Casio Edifice EF503D-1AV is a sophisticated men's watch with a stainless steel band, chronograph function, and tachymeter bezel."
+    },
+    {
+      "id": 12,
+      "watchName": "Casio Baby-G BGD560-7",
+      "watchPrice": 109.99,
+      "watchImg": "/img/image(10).jpg",
+      "lorem": "The Casio Baby-G BGD560-7 is a women's sports watch featuring a modern design, shock resistance, and multiple alarms."
+    },
+    {
+      "id": 13,
+      "watchName": "Casio Classic Collection F91W-1",
+      "watchPrice": 69.99,
+      "watchImg": "/img/image(12).jpg",
+      "lorem": "A timeless favorite, the Casio Classic Collection F91W-1 offers reliable timekeeping, a durable resin band, and water resistance."
+    },
+    {
+      "id": 14,
+      "watchName": "Casio Vintage A158WEA-9",
+      "watchPrice": 119.99,
+      "watchImg": "/img/image(13).jpg",
+      "lorem": "The Casio Vintage A158WEA-9 is a classic watch with a silver-tone bracelet, LED backlight, and retro design elements."
+    },
+    {
+      "id": 15,
+      "watchName": "Casio Illuminator W87H-1V",
+      "watchPrice": 79.99,
+      "watchImg": "/img/image(14).jpg",
+      "lorem": "The Casio Illuminator W87H-1V features a durable resin case, alarm function, and an illuminated digital display for easy reading."
+    },
+    {
+      "id": 16,
+      "watchName": "Casio Sport LRW200H-7BVCF",
+      "watchPrice": 89.99,
+      "watchImg": "/img/image(15).jpg",
+      "lorem": "Designed for water sports, the Casio Sport LRW200H-7BVCF is water-resistant, lightweight, and equipped with a reliable quartz movement."
+    },
+    {
+      "id": 17,
+      "watchName": "Casio Retro B640WC-5AEF",
+      "watchPrice": 99.99,
+      "watchImg": "/img/image(16).jpg",
+      "lorem": "The Casio Retro B640WC-5AEF combines vintage aesthetics with modern features, including an adjustable stainless steel band and an LED display."
+    },
+    {
+      "id": 18,
+      "watchName": "Casio Pathfinder PAG240-1CR",
+      "watchPrice": 199.99,
+      "watchImg": "/img/image(17).jpg",
+      "lorem": "Built for outdoor adventures, the Casio Pathfinder PAG240-1CR offers solar power, triple sensor technology, and a digital compass."
+    },
+    {
+      "id": 19,
+      "watchName": "Casio G-Shock GM-B200D-1A",
+      "watchPrice": 239.99,
+      "watchImg": "/img/image(18).jpg",
+      "lorem": "The Casio G-Shock GM-B200D-1A blends fashion and function with its stainless steel design and robust features."
+    },
+    {
+      "id": 19,
+      "watchName": "Casio G-Shock GMW-B5000D-1",
+      "watchPrice": 209.99,
+      "watchImg": "/img/image(19).jpg",
+      "lorem": "The Casio G-Shock GM-B200D-1A blends fashion and function with its stainless steel design and robust features."
+    }
+  ]
+}
