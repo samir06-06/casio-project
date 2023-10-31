@@ -1,43 +1,33 @@
-const currentPage = window.location.pathname;
-function init() {
-  switch (currentPage) {
-    case '/':
-      case '/dist/casio.html':
-
-        casio();
-        break; // Add a break statement here to exit the switch block
-      
-    case '/dist/search.html':
-
-      search();
-      break; // Add a break statement here to exit the switch block
-
-      case '/dist/item.html':
-      item();
-  }
+function overallSearch(){
+  const searchPlace = document.querySelector('#loop-search input[type="search"]');
+  searchPlace.value = localStorage.getItem("search")
+  const watchItems = document.querySelectorAll(".s-m-product")
+  const itemName = item.querySelector('h4').textContent.toLowerCase()
+  const searchPlaceValue = searchPlace.value.toLowerCase()
+  watchItems.forEach(watch => {
+    if(itemName.indexOf(searchPlaceValue) !=-1){
+      watch.style.display = "block"
+    }
+    else{
+      watch.style.display = "none"
+    }
+  })
 }
-document.addEventListener('DOMContentLoaded', init);
 
 
 
-function item(){
-  fetch('../data/data.json')
-  .then(response => response.json())
-  .then(data => displayItemDetails(data.watches[0]));
 
-  function displayItemDetails(watchDetails){
-    const section = document.getElementById("item-information")
-    section.innerHTML=`
-    <div id="item-display">
-        <img src=${watchDetails.watchImg}></div>
-      <div class="item-about">
-        <span>${watchDetails.watchName}</span>
-        <p>${watchDetails.lorem}</p>
-        <span class="price">${watchDetails.watchPrice}</span>
-        <button class="buy-favorite">Purchase!</button>
-        <button class="buy-favorite"><i class="fa-regular fa-heart"></i> Add To Favorites</button>
-      </div>
-    `
 
+
+searchPlace.addEventListener("input", searchEngine)  
+
+function searchEngine(){  
+    watchItems.forEach(item => {
+      if(itemName.indexOf( searchPlaceValue) != -1){
+        item.style.display = "block"
+      }
+      else{
+        item.style.display = "none"
+      }
+    })
   }
-}

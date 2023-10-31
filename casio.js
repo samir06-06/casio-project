@@ -8,8 +8,8 @@ function init() {
         break;
       
       case '/dist/search.html':
-
       search();
+
       break;
       
       case '/dist/item.html':
@@ -21,7 +21,7 @@ function init() {
 
 document.addEventListener('DOMContentLoaded', init);
 
-async function transferToItems(e){
+function transferToItems(e){
   if(e.target.getAttribute("alt") === "watch"){
   const imgSrc = e.target.getAttribute("src")
   localStorage.setItem("watchSrc", imgSrc)
@@ -33,10 +33,6 @@ else if(e.target.getAttribute("data-src")){
   window.location.pathname = '/dist/item.html'
 }
 }
-
-
-
-
 
 function search(){
   
@@ -63,7 +59,7 @@ function displayItems(watches) {
   });
 }
 const searchPlace = document.querySelector('#loop-search input[type="search"]');
-searchPlace.addEventListener("input", searchEngine)  
+searchPlace.addEventListener("change", searchEngine)  
 searchPlace.value = localStorage.getItem("search")
 
 function searchEngine(){  
@@ -79,16 +75,20 @@ function searchEngine(){
       }
     })
   }
-  
-  
-
-
+ 
 }
 
 function casio(){
   
+  fetch('../data/data.json')
+  .then(response => response.json())
+  .then(data => {
+    displayLMProducts(data.watches)
+    displayRProducts(data.watches)
+    displayStarProducts(data.watches)
+  });
+  
   const links = document.querySelectorAll(".additional").forEach(link=> link.addEventListener("click", transferToItems))
-
   const research = document.querySelector("#loop")
   const searchForm = document.getElementById("searchForm");
   searchForm.addEventListener("submit", function (event) {
@@ -97,10 +97,6 @@ function casio(){
     window.location.href = "search.html";
   });
 
-  fetch('../data/data.json')
-  .then(response => response.json())
-  .then(data => displayLMProducts(data.watches));
-  
 function displayLMProducts(watches) {
   const LMProducts = document.querySelectorAll(".l-m-product");
   const images = document.querySelectorAll("img").forEach(img=> img.addEventListener("click", transferToItems))
@@ -118,9 +114,7 @@ function displayLMProducts(watches) {
   });
 }
 
-fetch('../data/data.json')
-.then(response => response.json())
-.then(data => displayRProducts(data.watches));
+
 
 function displayRProducts(watches) {
   const images = document.querySelectorAll("img").forEach(img=> img.addEventListener("click", transferToItems))
@@ -155,11 +149,6 @@ RProducts.forEach((product, i) => {
 });
 }
 
-
-fetch('../data/data.json')
-.then(response => response.json())
-.then(data => displayStarProducts(data.watches));
-
 function displayStarProducts(watches){
 const SProducts = document.querySelectorAll(".star-p")
 SProducts.forEach((product, i)=>{
@@ -175,12 +164,9 @@ SProducts.forEach((product, i)=>{
 })
 }
 
-
 }
 
-
 function item(){
-
   const watchSrc = localStorage.getItem("watchSrc")
 
    fetch('../data/data.json')
@@ -202,9 +188,8 @@ function item(){
               <button class="buy-favorite"><i class="fa-regular fa-heart"></i> Add To Favorites</button>
             </div>
           `
-
       }
     } )
   }
 
-}
+} 
